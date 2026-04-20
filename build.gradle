@@ -27,6 +27,17 @@ dependencies {
     implementation('org.glassfish.jersey.media:jersey-media-json-jackson:4.0.0-M2')
     implementation('org.glassfish.jersey.inject:jersey-cdi2-se:4.0.0-M2')
     implementation('org.jboss.weld.se:weld-se-core:6.0.3.Final')
+// 1. Spring MVC
+    implementation("org.springframework:spring-webmvc:7.0.6")
+// 2. Thymeleaf
+    implementation("org.thymeleaf:thymeleaf-spring6:3.1.4.RELEASE")
+// 3. Thymeleaf Layout Dialect
+    implementation("nz.net.ultraq.thymeleaf:thymeleaf-layout-dialect:3.0.0")
+// 4. Commons fileupload2
+    implementation("org.apache.commons:commons-fileupload2-jakarta:2.0.0-M1")
+// 5. Validator
+    implementation("jakarta.validation:jakarta.validation-api:3.0.2")
+    implementation("org.hibernate.validator:hibernate-validator:8.0.1.Final")
 
     testImplementation("org.junit.jupiter:junit-jupiter-api:${junitVersion}")
     testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:${junitVersion}")

@@ -1,0 +1,15 @@
+1. quản lí danh sách (Read)
+-yêu cầu sử dụng Thymeleaf để hiển thị danh sách các sản phẩm
+-Xây dựng giao diện hiển thị toàn bộ danh sách các cuốn sách dưới dạng bảng
+-Thông báo rỗng nếu chưa có phần tử nào trong danh sách
+
+2. Thêm mới dữ liệu v ràng buộc (Create with validation)
+-Xây dựng giao diện form để thêm mới một cuốn sách
+-Sử dụng Data Binding để map dữ liệu lên server
+-Thêm ràng buộc dữ liệu (validation) :
+ + title: không được để trống, độ dài từ 3 đến 100 ký tự
+ + author: bắt buộc nhập, không được để khoảng trắng
+ + quantity: phải là số nguyên dương lớn hơn hoặc bằng 0
+-Thông báo lỗi nếu dữ liệu không hợp lệ và giữ lại dữ liệu đã nhập trong form và hiển thị câu thông báo lỗi chi tiết (màu đỏ) ngay bên dưới trường dữ liệu có lỗi
+3. Cập nhật dữ liệu (Update)
+-Cung cấp tính năng chỉnh sửa thông tin sách.Form chỉnh sửa phải được bind san dữ liệu hiện tại của cuốn sách được chọn.Sau khi thành công điều hướng về trang danh sách và hiển thị thông báo thành công
